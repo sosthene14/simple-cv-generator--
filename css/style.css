@@ -1,0 +1,329 @@
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima',sans-serif;
+}
+.navbar-brand img 
+{
+    width: 85px;
+}
+#navbar
+{
+    background-color: #13112E;
+}
+#navbarNav
+{
+    margin-left: 400px;
+}
+.navbar-nav
+{
+    display: flex;
+    gap: 30px;
+}
+#active
+{
+    background-color: rgb(0, 255, 187);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+#other-link 
+{
+    transition: all .2s;
+    color: white;
+}
+#other-link:hover 
+{
+    background-color: rgb(0, 255, 187);
+    padding: 10px;
+    border-radius: 5px;
+}
+#navbar-toggler
+{
+    background-color: white;
+    color: white;
+}
+.home-page-main-containt
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.home-page-main-containt img
+{
+    width: 100%;
+}
+#start-btn
+{
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #13112E;
+    color: white;
+    transition: all .5s;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#start-btn:hover
+{
+
+    transform: scale(1.1,1.1);
+}
+.home-page-main-containt h1,p 
+{
+    color: #13112E;;
+}
+.container-footer {
+    margin: auto;
+    color: white;
+    text-align: center;
+  }
+  .footer {
+    background-color :#13112E;
+    padding: 70px 0;
+    margin-top: 50px;
+  }
+  #template1
+  {
+    width: 30%;
+  }
+  .my-form
+{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 50px;
+}
+.my-form
+{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 50px;
+}
+.form-inputs
+{
+  display: flex;
+  flex-direction: column-reverse;
+  
+  gap: 20px;
+}
+.div-for-spacing-inputs
+{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.name-email-divs
+{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.div-for-spacing-inputs input 
+{
+  height: 58px;
+  border-radius: 5px;
+  border: 1px solid rgb(241, 234, 255);
+  outline: none;
+  padding: 10px;
+  
+}
+.div-for-spacing-inputs input:focus
+{
+  border: 2px solid rgba(200, 172, 255, 0.2);
+}
+.div-for-spacing-inputs textarea
+{
+  height: 150px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid rgb(241, 234, 255);
+  outline: none;
+  padding: 10px;
+  transition: all .1s;
+  
+}
+.div-for-spacing-inputs textarea:focus
+{
+  border: 5px solid rgba(200, 172, 255, 0.2);
+ 
+}
+.div-for-spacing-inputs button 
+{
+  height: 57px;
+  font-size: 1.2em;
+}
+.template
+{
+  width: 80%;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.template-div
+{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 100px
+}
+figure
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.div-templates
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.first-inputs-block
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  gap: 10px;
+  display: none;
+}
+.div-btn
+{
+  margin-top: 15px;
+}
+
+#adresse
+{
+  color: #323232;
+}
+#telephone
+{
+  color: #323232;
+}
+.main-section
+{
+  display: flex;
+  justify-content: space-between;
+}
+.second-section
+{
+
+  width: 27%;
+  height: 200vh;
+  margin: auto;
+  margin-top: 200px;
+}
+#image
+{
+  width: 100px;
+}
+#pdf 
+{
+  margin-top: 15px;
+}
+.third-section
+{
+  width: 62%;
+  height: 200vh;
+  margin: auto;
+}
+.btn-and-inputs
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.first-inputs-block
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  width: 300px;
+}
+.right-div-informations-shown
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+#description
+{
+  text-align: center;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.personnal-informations
+{
+  display: flex;
+  gap: 10px;
+}
+.hidden {
+  display: none;
+}
+.label-and-checkbox
+{
+  display: flex;
+ justify-content: center;
+ gap: 30px;
+  
+}
+.experience
+{
+  display: flex;
+  gap: 10px;
+}
+.experiences-div
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#experience-word
+{
+ margin-left: 100px;
+}
+#education-word
+{
+  margin-left: 100px;
+}
+#competence-word
+{
+  margin-left: 100px;
+}
+.experience-dates-divs
+{display: flex;
+gap: 10px;
+margin-left: 150px;
+margin-top: 15px;
+}
+#society-info
+{
+  position: relative;
+  bottom: 17px;
+}
+#competence-content
+{
+  display: flex;
+  flex-direction: column;
+}
+#imageContainer
+{
+  width: 100px;
+}

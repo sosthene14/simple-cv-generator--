@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sans Template</title>
+  </head>
+  <body>
+    <section class="main-section">
+      <section class="second-section">
+        <div>
+          <div class="btn-and-inputs">
+            <div>
+              <button
+                class="btn btn-primary"
+                id="divs-btn"
+                onclick="handleInformations()"
+              ></button>
+            </div>
+            <div class="first-inputs-block">
+              <div>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name-input"
+                  placeholder="Nom"
+                  pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ]+$"
+                  title="Seul les lettres sont acceptés"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name-input"
+                  placeholder="Prenom"
+                  pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ]+$"
+                  title="Seul les lettres sont acceptés"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="adresse-input"
+                  placeholder="Adresse"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="telephone-input"
+                  placeholder="Téléphone"
+                  required
+                  maxlength="13"
+                  min="9"
+                  pattern="^[0-9+]+$"
+                  title="exemple : +221123456789"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-input"
+                  placeholder="email"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date-input"
+                  placeholder="date de naissance"
+                  min="1900-01-01"
+                  max="2023-02-25"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="naissance-input"
+                  placeholder="Lieu de naissance"
+                />
+              </div>
+            </div>
+            <div class="div-btn">
+              <button
+                class="btn btn-primary"
+                id="divs-btn-2"
+                onclick="handleDescriptionInformation()"
+              ></button>
+            </div>
+            <div class="first-inputs-block" id="description-div">
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description-input"
+                  placeholder="Decrivez vous"
+                  pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ]+$"
+                  title="Seul les lettres sont acceptés"
+                  required
+                />
+              </div>
+            </div>
+            <div class="div-btn">
+              <button
+                class="btn btn-primary"
+                id="divs-btn-3"
+                onclick="handleExperiencesInformations()"
+              ></button>
+            </div>
+            <div class="first-inputs-block" id="experiences-div">
+              <div>
+                <div class="experiences-div">
+                  <div class="experience">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="experience-start-input"
+                      placeholder="Date de début"
+                      title="Date de début"
+                      required
+                    />
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="experience-end-input"
+                      placeholder="Date de fin"
+                      title="Date de fin"
+                      required
+                    />
+                  </div>
+                  <div class="experience">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="experience-poste-input"
+                      placeholder="Poste"
+                      title="poste"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="experience-society-input"
+                      placeholder="Societé"
+                      title="Société"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="experience-details-input"
+                    placeholder="Un petit détail sur votre poste"
+                    title="Detail poste"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="div-btn">
+              <button
+                class="btn btn-primary"
+                id="divs-btn-4"
+                onclick="handleEducationInformations()"
+              ></button>
+            </div>
+            <div class="first-inputs-block" id="education-div">
+              <div>
+                <div class="experiences-div">
+                  <div class="experience">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="education-date-input"
+                      placeholder="Date d'obtention"
+                      title="Date d'obtention"
+                      required
+                    />
+                  </div>
+                  <div class="experience">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="diplome-input"
+                      placeholder="Diplome"
+                      title="diplome"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ecole-input"
+                      placeholder="Ecole d'obtention"
+                      title="Ecole d'obtention"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="education-details-input"
+                    placeholder="Un petit détail sur votre diplome"
+                    title="Detail diplome"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="div-btn">
+              <button
+                class="btn btn-primary"
+                id="divs-btn-5"
+                onclick="handleCompetenceInformations()"
+              ></button>
+            </div>
+            <div class="first-inputs-block" id="competence-div">
+              <div>
+                <div class="experiences-div">
+                  <div class="experience">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="competence1-input"
+                      placeholder="competence 1"
+                      title="Competence 1"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="competence2-input"
+                      placeholder="competence 2"
+                      title="Competence 2"
+                      required
+                    />
+                  </div>
+                  <div class="experience">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="competence3-input"
+                      placeholder="competence 3"
+                      title="competence 3"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="competence4-input"
+                      placeholder="competence 4"
+                      title="competence 4"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="pdf" type="submit" onclick="savePDF()">
+              Telecharger le pdf
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="third-section" id="third-section">
+        <div id="div-to-save">
+          <div class="right-div-informations-shown">
+            <div class="personnal-informations">
+              <h4 id="name"></h4>
+              <h4 id="first-name"></h4>
+            </div>
+            <div class="personnal-informations">
+              <h6 id="adresse"></h6>
+              <h6 id="telephone"></h6>
+              <h6 id="email"></h6>
+            </div>
+            <div class="personnal-informations">
+              <h6 id="date"></h6>
+              <h6 id="naissance"></h6>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p id="description">Description</p>
+          </div>
+          <div>
+            <div>
+              <h5 id="experience-word">Experience</h5>
+            </div>
+            <div class="experience-dates-divs">
+              <h6 id="experience-start"></h6>
+              <h6 id="experience-end"></h6>
+            </div>
+            <div class="experience-dates-divs" id="society-info">
+              <h6 id="experience-society"></h6>
+              <h6 id="experience-poste"></h6>
+            </div>
+            <div class="experience-dates-divs" id="society-info">
+              <h6 id="experience-details"></h6>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h5 id="education-word">Education</h5>
+            </div>
+            <div class="experience-dates-divs">
+              <h6 id="education-date"></h6>
+            </div>
+            <div class="experience-dates-divs" id="society-info">
+              <h6 id="diplome"></h6>
+              <h6 id="ecole"></h6>
+            </div>
+            <div class="experience-dates-divs" id="diplome-info">
+              <h6 id="diplome-details"></h6>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h5 id="competence-word">Compétences</h5>
+            </div>
+            <div class="experience-dates-divs" id="competence-content">
+              <h6 id="competence1"></h6>
+              <h6 id="competence2"></h6>
+              <h6 id="competence3"></h6>
+              <h6 id="competence4"></h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="stScript.js" defer></script>
+  </body>
+</html>
